@@ -1,4 +1,4 @@
 vX.X.X
 <% pull_requests.each do |pr| -%>
-<%= pr %>
+<%= pr.id %><%= pr.no %><%= pr.title %><%= pr.author %>
 <% end -%>
