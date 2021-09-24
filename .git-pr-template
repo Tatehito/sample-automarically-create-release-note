@@ -1,4 +1,5 @@
 vX.X.X
 <% pull_requests.each do |pr| -%>
-<%= pr.to_hash[:data] %>
+<% data = pr.to_hash[:data] %>
+- [ ] #<%= data[:number] %> <%= data[:title] %> <%= pr.mention %>
 <% end -%>
