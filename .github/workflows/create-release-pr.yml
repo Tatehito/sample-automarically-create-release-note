@@ -13,11 +13,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Set up Ruby 3
-        uses: actions/setup-ruby@v1
-        with:
-          ruby-version: 3.0.x
-
       - name: Create a release pull request
         uses: bakunyo/git-pr-release-action@master
         env:
