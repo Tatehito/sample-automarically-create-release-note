@@ -1,4 +1,4 @@
 vX.X.X
 <% pull_requests.each do |pr| -%>
-<%= pr.to_hash.title %>
+<%= pr.to_hash.data %>
 <% end -%>
