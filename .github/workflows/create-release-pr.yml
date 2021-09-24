@@ -19,12 +19,10 @@ jobs:
           ruby-version: 3.0.x
 
       - name: Create a release pull request
+        uses: bakunyo/git-pr-release-action@master
         env:
-          GIT_PR_RELEASE_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GIT_PR_RELEASE_BRANCH_PRODUCTION: main
           GIT_PR_RELEASE_BRANCH_STAGING: develop
           GIT_PR_RELEASE_LABELS: release
           GIT_PR_RELEASE_TEMPLATE: .git-pr-template
-        run: |
-          gem install -N git-pr-release -v "1.9.0"
-          git-pr-release --no-fetch
