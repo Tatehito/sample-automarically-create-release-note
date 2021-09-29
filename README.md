@@ -14,5 +14,5 @@ github-release release \
   --repo repository_name \
   --tag vX.X.X \
   --name "vX.X.X" \
-  --description "$(/Users/kentosato/go/1.17.1/bin/ghch --format=markdown --latest)"
+  --description "$(ghch --format=markdown --latest)"
 ```
