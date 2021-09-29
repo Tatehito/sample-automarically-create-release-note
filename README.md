@@ -16,3 +16,5 @@ github-release release \
   --name "vX.X.X" \
   --description "$(ghch --format=markdown --latest)"
 ```
+
+test
