@@ -7,3 +7,12 @@
   - PR の内容がそのまま Release の内容になる
 
 ### ghch・gitHub-release を使った手動生成
+
+```
+github-release release \
+  --user github_user_name \
+  --repo repository_name \
+  --tag vX.X.X \
+  --name "vX.X.X" \
+  --description "$(/Users/kentosato/go/1.17.1/bin/ghch --format=markdown --latest)"
+```
