@@ -6,7 +6,7 @@
   - PR のタイトルがそのままタグ名になる
   - PR の内容がそのまま Release の内容になる
 
-### ghch・gitHub-release を使った手動生成
+### ghch・gitHub-release を使って手動生成する
 
 ```
 github-release release \
